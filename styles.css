@@ -1,0 +1,146 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(img/d.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.container {
+    max-width: 600px;
+    margin: 10px auto;
+    background-color: rgba(226, 222, 222, 0.9); /* Sayfa içeriğine gölge efekti eklemek için arka plan rengi */
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 60%;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Her bölümün arka plan rengi */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+   
+}
+
+h2, h3 {
+    color: #555;
+}
+
+form {
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #777;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#meetingStatus, #katilimciBilgileri {
+    background-color:transparent;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#meetingStatus h2, #katilimciBilgileri h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#meetingStatusText, #katilimciBilgisi {
+    color: #555;
+    font-size: 16px;
+}
+
+#katilimciBilgisi {
+    font-style: italic;
+}
+
+#katilimciListesi {
+    list-style-type: none;
+    padding: 0;
+}
+
+#katilimciListesi li {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.status-icon,
+.participant-icon {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+#meetingStatus h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#meetingStatusText {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+}
+
+#meetingStatusText p {
+    margin: 10px 0;
+}
+

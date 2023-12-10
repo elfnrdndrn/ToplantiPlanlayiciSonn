@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPLANTI PLANLAYICI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TOPLANTI PLANLAYICI</h1>
+        </header>
+
+        <section id="meetingStatus">
+            <h2>Toplantı Durumu</h2>
+            <p id="meetingStatusText">Henüz bir toplantı planı oluşturulmadı.</p>
+        
+            <div id="katilimciBilgileri">
+                <h3>Katılımcı Bilgileri</h3>
+                <p id="katilimciBilgisi">Henüz katılımcı bulunmuyor.</p>
+                <ul id="katilimciListesi"></ul>
+            </div>
+        </section>
+
+        <section id="meetingActions">
+            <div id="createMeeting">
+                <h3>Toplantı Oluştur</h3>
+                <form id="createMeetingForm">
+                    <label for="username">Kullanıcı Adı:</label>
+                    <input type="text" id="username" required>
+
+                    <label for="password">Kullanıcı Şifresi:</label>
+                    <input type="password" id="password" required>
+
+                    <label for="meetingSubject">Toplantı Konusu:</label>
+                    <input type="text" id="meetingSubject" required>
+
+                    <label for="meetingDate">Toplantı Tarihi:</label>
+                    <input type="datetime-local" id="meetingDate" required>
+
+                    <button type="button" onclick="createMeeting()">Toplantı Oluştur</button>
+                </form>
+            </div>
+
+            <div id="cancelMeeting">
+                <h3>Toplantı İptal Et</h3>
+                <form id="cancelMeetingForm">
+                    <label for="cancelUsername">Kullanıcı Adı:</label>
+                    <input type="text" id="cancelUsername" required>
+
+                    <label for="cancelPassword">Kullanıcı Şifresi:</label>
+                    <input type="password" id="cancelPassword" required>
+
+                    <label for="meetingCode">Toplantı Kodu:</label>
+                    <input type="text" id="meetingCode" required>
+
+                    <button type="button" onclick="cancelMeeting()">Toplantı İptal Et</button>
+                </form>
+            </div>
+
+            <div id="joinMeeting">
+                <h2>Bir Toplantıya Katıl</h2>
+                <form id="joinMeetingForm">
+                    <label for="katilimciAdi">Katılımcı Adı:</label>
+                    <input type="text" id="katilimciAdi" placeholder="Adınızı girin">
+
+                    <label for="toplantiKodu">Toplantı Kodu:</label>
+                    <input type="text" id="toplantiKodu" placeholder="Kodunuzu girin">
+
+                    <label for="tarihSaat">Katılabileceğiniz Tarih ve Saat:</label>
+                    <input type="datetime-local" id="tarihSaat">
+
+                    <button type="button" onclick="katilimciEkle()">Gönder</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
